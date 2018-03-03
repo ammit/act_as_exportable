@@ -1,4 +1,5 @@
 require 'csv'
+require 'act_as_exportable'
 
 module ActAsExportable
   module ActiveRecordModelExtension

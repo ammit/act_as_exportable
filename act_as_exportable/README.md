@@ -22,16 +22,7 @@ Or install it yourself as:
 
 ## Usage
 
-
-### For Import in Controller 
-  ModelName.import_csv params[:file].try(:path)
-
-
-
-
-
-
-
+TODO: Write usage instructions here
 
 ## Development
 
@@ -50,8 +41,3 @@ The gem is available as open source under the terms of the [MIT License](https:/
 ## Code of Conduct
 
 Everyone interacting in the ActAsExportable project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/act_as_exportable/blob/master/CODE_OF_CONDUCT.md).
-
-
-
-
-ActiveRecord::Base.connection.execute("COPY (SELECT u.id, c.company_name FROM users AS u INNER JOIN companies AS c ON u.company_id = u.id) TO '/Users/amit/Desktop/export.csv';")
