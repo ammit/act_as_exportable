@@ -1,10 +1,12 @@
+$LOAD_PATH.unshift(File.dirname(__FILE__))
+$LOAD_PATH.unshift(File.join(File.dirname(__FILE__), '..', 'lib'))
 require 'active_record'
-# require "bundler/setup"
-require "act_as_exportable"
+# require 'fixtures/test_model'
+# require 'fixtures/test_extended_model'
+# require 'fixtures/extra_field'
+# require 'fixtures/test_model'
 require 'rspec'
 require 'rspec/autorun'
-
-require 'fixtures/test_model'
 
 
 RSpec.configure do |config|

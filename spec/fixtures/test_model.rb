@@ -1,4 +1,5 @@
-require 'act_as_exportable'
+require "spec_helper"
+# require 'act_as_exportable'
 
 class TestModel < ActiveRecord::Base
   act_as_exportable attributes: %w|id name|,

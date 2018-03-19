@@ -128,9 +128,7 @@ module ActAsExportable
           begin  
             ActiveRecord::Base.transaction do  
               sanitized_sql = "INSERT INTO #{table} #{_columns_string_2}
-                SELECT DISTINCT on (code) #{_columns_list_2.join(', ')} FROM tmp_x
-                ON CONFLICT (code) DO UPDATE SET #{_settts_excluded};"
-              
+                SELECT DISTINCT on (code) #{_columns_list_2.join(', ')} FROM tmp_x;"
               ActiveRecord::Base.connection.execute(sanitized_sql)
             end
            rescue Exception => exc 
